@@ -203,7 +203,7 @@ var PDFObject = function (obj){
 
 		}
 
-		targetNode.innerHTML = '<object	data="' +url +'" type="application/pdf" width="' +width +'" height="' +height +'"></object>';
+		targetNode.innerHTML = '<object	id="embedded_"' + targetID + ' data="' +url +'" type="application/pdf" width="' +width +'" height="' +height +'"></object>';
 
 		return targetNode.getElementsByTagName("object")[0];
 
