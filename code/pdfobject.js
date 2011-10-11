@@ -205,7 +205,7 @@ var PDFObject = function (obj){
 
 		targetNode.innerHTML = '<object	id="embedded_"' + targetID + ' data="' +url +'" type="application/pdf" width="' +width +'" height="' +height +'"></object>';
 
-		return targetNode.getElementByID('embedded_' + targetID);
+		return targetNode.getElementById('embedded_' + targetID);
 
 	};
 
